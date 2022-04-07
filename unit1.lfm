@@ -1,0 +1,588 @@
+object Form1: TForm1
+  Left = 1396
+  Height = 1011
+  Top = 116
+  Width = 1128
+  Caption = 'Calculator'
+  ClientHeight = 1011
+  ClientWidth = 1128
+  Color = clInfoBk
+  DesignTimePPI = 120
+  OnClick = FormClick
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object Button1: TButton
+    Left = 16
+    Height = 31
+    Top = 144
+    Width = 56
+    Caption = '1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 88
+    Height = 31
+    Top = 144
+    Width = 56
+    Caption = '2'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 160
+    Height = 31
+    Top = 144
+    Width = 56
+    Caption = '3'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 16
+    Height = 31
+    Top = 176
+    Width = 56
+    Caption = '4'
+    OnClick = Button4Click
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 88
+    Height = 31
+    Top = 176
+    Width = 57
+    Caption = '5'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 160
+    Height = 31
+    Top = 176
+    Width = 56
+    Caption = '6'
+    OnClick = Button6Click
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 16
+    Height = 31
+    Top = 208
+    Width = 56
+    Caption = '7'
+    OnClick = Button7Click
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 88
+    Height = 31
+    Top = 208
+    Width = 56
+    Caption = '8'
+    OnClick = Button8Click
+    TabOrder = 7
+  end
+  object Button9: TButton
+    Left = 160
+    Height = 31
+    Top = 208
+    Width = 56
+    Caption = '9'
+    OnClick = Button9Click
+    TabOrder = 8
+  end
+  object Button10: TButton
+    Left = 608
+    Height = 30
+    Top = 8
+    Width = 50
+    Caption = 'Exit'
+    Color = clRed
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button10Click
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Label1: TLabel
+    Left = 224
+    Height = 20
+    Top = 8
+    Width = 40
+    Caption = 'Result'
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 96
+    Width = 9
+    Caption = 'X'
+  end
+  object Label3: TLabel
+    Left = 280
+    Height = 20
+    Top = 96
+    Width = 8
+    Caption = 'Y'
+  end
+  object Edit1: TEdit
+    Left = 200
+    Height = 28
+    Top = 32
+    Width = 100
+    TabOrder = 10
+    Text = '0'
+  end
+  object Edit2: TEdit
+    Left = 292
+    Height = 28
+    Top = 96
+    Width = 188
+    TabOrder = 11
+  end
+  object Edit3: TEdit
+    Left = 32
+    Height = 28
+    Top = 96
+    Width = 184
+    TabOrder = 12
+  end
+  object Button11: TButton
+    Left = 608
+    Height = 31
+    Top = 112
+    Width = 94
+    Caption = '+'
+    OnClick = Button11Click
+    TabOrder = 13
+  end
+  object Button12: TButton
+    Left = 608
+    Height = 31
+    Top = 152
+    Width = 94
+    Caption = '-'
+    OnClick = Button12Click
+    TabOrder = 14
+  end
+  object Button13: TButton
+    Left = 608
+    Height = 31
+    Top = 192
+    Width = 94
+    Caption = '*'
+    OnClick = Button13Click
+    TabOrder = 15
+  end
+  object Button14: TButton
+    Left = 608
+    Height = 31
+    Top = 232
+    Width = 94
+    Caption = '/'
+    OnClick = Button14Click
+    TabOrder = 16
+  end
+  object Button15: TButton
+    Left = 88
+    Height = 31
+    Top = 280
+    Width = 55
+    Caption = 'ABS(x)'
+    OnClick = Button15Click
+    TabOrder = 17
+  end
+  object Button16: TButton
+    Left = 160
+    Height = 31
+    Top = 280
+    Width = 56
+    Caption = 'SQRT(x)'
+    OnClick = Button16Click
+    TabOrder = 18
+  end
+  object Button17: TButton
+    Left = 280
+    Height = 31
+    Top = 144
+    Width = 56
+    Caption = '1'
+    OnClick = Button17Click
+    TabOrder = 19
+  end
+  object Button18: TButton
+    Left = 352
+    Height = 31
+    Top = 144
+    Width = 56
+    Caption = '2'
+    OnClick = Button18Click
+    TabOrder = 20
+  end
+  object Button19: TButton
+    Left = 424
+    Height = 31
+    Top = 144
+    Width = 56
+    Caption = '3'
+    OnClick = Button19Click
+    TabOrder = 21
+  end
+  object Button20: TButton
+    Left = 280
+    Height = 31
+    Top = 176
+    Width = 56
+    Caption = '4'
+    OnClick = Button20Click
+    TabOrder = 22
+  end
+  object Button21: TButton
+    Left = 352
+    Height = 31
+    Top = 176
+    Width = 56
+    Caption = '5'
+    OnClick = Button21Click
+    TabOrder = 23
+  end
+  object Button22: TButton
+    Left = 424
+    Height = 31
+    Top = 176
+    Width = 56
+    Caption = '6'
+    OnClick = Button22Click
+    TabOrder = 24
+  end
+  object Button23: TButton
+    Left = 280
+    Height = 31
+    Top = 208
+    Width = 56
+    Caption = '7'
+    OnClick = Button23Click
+    TabOrder = 25
+  end
+  object Button24: TButton
+    Left = 352
+    Height = 31
+    Top = 208
+    Width = 56
+    Caption = '8'
+    OnClick = Button24Click
+    TabOrder = 26
+  end
+  object Button25: TButton
+    Left = 424
+    Height = 31
+    Top = 208
+    Width = 56
+    Caption = '9'
+    OnClick = Button25Click
+    TabOrder = 27
+  end
+  object Button26: TButton
+    Left = 88
+    Height = 31
+    Top = 242
+    Width = 56
+    Caption = '0'
+    OnClick = Button26Click
+    TabOrder = 28
+  end
+  object Button27: TButton
+    Left = 352
+    Height = 31
+    Top = 242
+    Width = 56
+    Caption = '0'
+    OnClick = Button27Click
+    TabOrder = 29
+  end
+  object Button28: TButton
+    Left = 0
+    Height = 31
+    Top = 280
+    Width = 72
+    Caption = 'Refresh(x)'
+    OnClick = Button28Click
+    TabOrder = 30
+  end
+  object Button29: TButton
+    Left = 272
+    Height = 31
+    Top = 280
+    Width = 72
+    Caption = 'Refresh(y)'
+    OnClick = Button29Click
+    TabOrder = 31
+  end
+  object Button30: TButton
+    Left = 353
+    Height = 31
+    Top = 280
+    Width = 55
+    Caption = 'ABS(y)'
+    OnClick = Button30Click
+    TabOrder = 32
+  end
+  object Button31: TButton
+    Left = 424
+    Height = 31
+    Top = 280
+    Width = 56
+    Caption = 'SQRT(y)'
+    OnClick = Button31Click
+    TabOrder = 33
+  end
+  object Button32: TButton
+    Left = 160
+    Height = 31
+    Top = 242
+    Width = 56
+    Caption = 'SQR(x)'
+    OnClick = Button32Click
+    TabOrder = 34
+  end
+  object Button33: TButton
+    Left = 424
+    Height = 31
+    Top = 242
+    Width = 56
+    Caption = 'SQR(y)'
+    OnClick = Button33Click
+    TabOrder = 35
+  end
+  object Button34: TButton
+    Left = 16
+    Height = 31
+    Top = 242
+    Width = 56
+    Caption = '!'
+    OnClick = Button34Click
+    TabOrder = 36
+  end
+  object Button35: TButton
+    Left = 280
+    Height = 31
+    Top = 242
+    Width = 56
+    Caption = '!'
+    OnClick = Button35Click
+    TabOrder = 37
+  end
+  object Button36: TButton
+    Left = 88
+    Height = 31
+    Top = 320
+    Width = 55
+    Caption = 'Sin(x)'
+    OnClick = Button36Click
+    TabOrder = 38
+  end
+  object Button37: TButton
+    Left = 160
+    Height = 31
+    Top = 320
+    Width = 55
+    Caption = 'Cos(x)'
+    OnClick = Button37Click
+    TabOrder = 39
+  end
+  object Button38: TButton
+    Left = 88
+    Height = 31
+    Top = 354
+    Width = 55
+    Caption = 'tg(x)'
+    OnClick = Button38Click
+    TabOrder = 40
+  end
+  object Button39: TButton
+    Left = 161
+    Height = 31
+    Top = 354
+    Width = 55
+    Caption = 'ctg(x)'
+    OnClick = Button39Click
+    TabOrder = 41
+  end
+  object Button40: TButton
+    Left = 352
+    Height = 31
+    Top = 320
+    Width = 55
+    Caption = 'Sin(y)'
+    OnClick = Button40Click
+    TabOrder = 42
+  end
+  object Button41: TButton
+    Left = 424
+    Height = 31
+    Top = 320
+    Width = 55
+    Caption = 'Cos(y)'
+    OnClick = Button41Click
+    TabOrder = 43
+  end
+  object Button42: TButton
+    Left = 352
+    Height = 31
+    Top = 354
+    Width = 55
+    Caption = 'tg(y)'
+    OnClick = Button42Click
+    TabOrder = 44
+  end
+  object Button43: TButton
+    Left = 425
+    Height = 31
+    Top = 354
+    Width = 55
+    Caption = 'ctg(y)'
+    OnClick = Button43Click
+    TabOrder = 45
+  end
+  object Button44: TButton
+    Left = 16
+    Height = 31
+    Top = 320
+    Width = 56
+    Caption = 'Ln(x)'
+    OnClick = Button44Click
+    TabOrder = 46
+  end
+  object Button45: TButton
+    Left = 16
+    Height = 31
+    Top = 352
+    Width = 56
+    Caption = 'Exp(x)'
+    OnClick = Button45Click
+    TabOrder = 47
+  end
+  object Button46: TButton
+    Left = 280
+    Height = 31
+    Top = 320
+    Width = 56
+    Caption = 'Ln(y)'
+    OnClick = Button46Click
+    TabOrder = 48
+  end
+  object Button47: TButton
+    Left = 280
+    Height = 31
+    Top = 354
+    Width = 56
+    Caption = 'Exp(y)'
+    OnClick = Button47Click
+    TabOrder = 49
+  end
+  object Button48: TButton
+    Left = 648
+    Height = 31
+    Top = 528
+    Width = 94
+    Caption = 'Draw'
+    OnClick = Button48Click
+    TabOrder = 50
+  end
+  object Button49: TButton
+    Left = 648
+    Height = 31
+    Top = 568
+    Width = 94
+    Caption = 'Clean'
+    OnClick = Button49Click
+    TabOrder = 51
+  end
+  object Edit4: TEdit
+    Left = 720
+    Height = 28
+    Top = 640
+    Width = 100
+    TabOrder = 52
+    Text = '0'
+  end
+  object Edit5: TEdit
+    Left = 720
+    Height = 28
+    Top = 680
+    Width = 100
+    TabOrder = 53
+    Text = '0'
+  end
+  object Edit6: TEdit
+    Left = 720
+    Height = 28
+    Top = 728
+    Width = 100
+    TabOrder = 54
+    Text = '0'
+  end
+  object Edit7: TEdit
+    Left = 720
+    Height = 28
+    Top = 776
+    Width = 100
+    TabOrder = 55
+    Text = '0'
+  end
+  object Label4: TLabel
+    Left = 658
+    Height = 20
+    Top = 640
+    Width = 42
+    Caption = 'Speed'
+  end
+  object Label5: TLabel
+    Left = 658
+    Height = 20
+    Top = 680
+    Width = 39
+    Caption = 'Angle'
+  end
+  object Label6: TLabel
+    Left = 658
+    Height = 20
+    Top = 728
+    Width = 33
+    Caption = 'Time'
+  end
+  object Label7: TLabel
+    Left = 658
+    Height = 20
+    Top = 776
+    Width = 57
+    Caption = 'Distance'
+  end
+  object Chart1: TChart
+    Left = 56
+    Height = 410
+    Top = 512
+    Width = 528
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+end
